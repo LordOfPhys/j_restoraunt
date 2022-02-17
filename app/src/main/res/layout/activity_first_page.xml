@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".FirstPageActivity"
+    android:background="#F3EEEE"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_weight="0.93"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:text="Главная">
+            </TextView>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_house">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.85"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/first_page_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_menu_settings">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.07"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_weight="0.85"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="НАШИ ЗАВЕДЕНИЯ">
+        </TextView>
+
+        <ImageView
+            android:paddingHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_rectangle">
+        </ImageView>
+
+        <ListView
+            android:layout_weight="0.15"
+            android:divider="@null"
+            android:id="@+id/first_page_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

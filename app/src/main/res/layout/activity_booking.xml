@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#F3EEEE"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="0.93"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btn_to_main"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:text="Главная">
+            </TextView>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_house">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.85"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/first_page_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_menu_settings">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_weight="0.07"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="288dp"
+            android:layout_height="246dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_cancel">
+
+            <ImageView
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="34dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_file_cancel">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/booking_time"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="192dp"
+                android:layout_height="37dp"
+                android:textColor="#000000"
+                android:text="Дата"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:drawableRight="@drawable/ic_u_notes"
+                android:paddingRight="10dp"
+                android:background="@drawable/ic_edit_background_cancel"></TextView>
+
+            <EditText
+                android:id="@+id/edit_booking"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="192dp"
+                android:layout_height="37dp"
+                android:paddingLeft="8dp"
+                android:drawableRight="@drawable/ic_u_users_alt"
+                android:paddingRight="10dp"
+                android:textSize="12dp"
+                android:hint="@string/edittext_hint_booking"
+                android:background="@drawable/ic_edit_background_cancel">
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_make_booking"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="139dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_group_9">
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

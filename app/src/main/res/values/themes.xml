@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.J_restoraunt" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#F3EEEE</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="hintTextColor">#000000</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:popupBackground">@drawable/menu_background</item>
+        <item name="android:dropDownHorizontalOffset">-5dp</item>
+        <item name="android:dropDownVerticalOffset">20dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

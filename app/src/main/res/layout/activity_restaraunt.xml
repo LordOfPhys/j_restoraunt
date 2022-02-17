@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#F3EEEE"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="0.93"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btn_to_main"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:text="Главная">
+            </TextView>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_house">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.85"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/first_page_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_menu_settings">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_weight="0.07"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_marginVertical="10dp"
+                android:id="@+id/act_restaraunt_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </androidx.viewpager.widget.ViewPager>
+
+            <TextView
+                android:justificationMode="inter_word"
+                android:layout_marginVertical="10dp"
+                android:paddingHorizontal="20dp"
+                android:textColor="#000000"
+                android:id="@+id/act_restaraunt_description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+            </TextView>
+
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Меню"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+            </TextView>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_marginVertical="10dp"
+                android:id="@+id/act_restaraunt_viewPager_menu"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </androidx.viewpager.widget.ViewPager>
+
+            <Button
+                android:layout_marginVertical="10dp"
+                android:id="@+id/act_restaraunt_btn_booking"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_make_booking">
+            </Button>
+
+            <Button
+                android:layout_marginVertical="10dp"
+                android:id="@+id/act_restaraunt_btn_cancel_booking"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_cancel_booking">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

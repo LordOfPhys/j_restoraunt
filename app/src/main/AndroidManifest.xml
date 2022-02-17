@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.j_restoraunt">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Cafy"
+        android:networkSecurityConfig="@xml/network_secutiry_config"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.J_restoraunt">
+        <activity
+            android:name=".FirstPageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RestarauntPageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".BookingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".ActivityImageZoom"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".CancelBookingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

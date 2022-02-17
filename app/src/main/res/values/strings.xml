@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="action_settings"></string>
+    <string name="edittext_hint"><font size="12">Введите номер брони</font></string>
+    <string name="edittext_hint_booking"><font size="12">Кол-во гостей</font></string>
+    <string name="action_my_booking">Мои брони</string>
+    <string name="action_cancel_booking">Отменить бронь</string>
+    <string name="action_personal_account">Личный кабинет</string>
+    <string name="action_main">Главная</string>
+</resources>

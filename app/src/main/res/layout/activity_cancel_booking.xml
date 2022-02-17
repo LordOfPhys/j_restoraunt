@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#F3EEEE"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="0.93"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btn_to_main"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:text="Главная">
+            </TextView>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_house">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="0.85"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/first_page_menu"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_menu_settings">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_weight="0.07"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="288dp"
+            android:layout_height="216dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_cancel">
+
+            <ImageView
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="34dp"
+                android:layout_height="39dp"
+                android:src="@drawable/ic_file_cancel">
+            </ImageView>
+
+            <EditText
+                android:id="@+id/edit_cancel"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="192dp"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:layout_height="37dp"
+                android:paddingLeft="8dp"
+                android:hint="@string/edittext_hint"
+                android:background="@drawable/ic_edit_background_cancel"></EditText>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="192dp"
+                android:layout_height="37dp"
+                android:background="@drawable/ic_btn_cancel">
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
